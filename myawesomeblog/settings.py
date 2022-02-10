@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'myawesomeblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'myawesomeblogdb',
+        'USER': 'postgres',
+        'PASSWORD': 'bmw6200mm7',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -126,4 +130,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = 'media/'
+MEDIA_URL = 'awesome_media/'
