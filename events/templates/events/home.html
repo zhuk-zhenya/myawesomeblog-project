@@ -65,10 +65,10 @@
           <a class="nav-link" href="{% static 'about me.txt' %}" download="about me.txt">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Facebook</a>
+          <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com">Facebook</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="{% url 'showblog'%}">Blog</a>
         </li>
 
       </ul>
@@ -87,6 +87,7 @@
           <a href="mailto:zhukzhenya77@gmail.com" class="btn btn-primary my-2">Main me</a>
 
         </p>
+        <img src="{% static 'foto.jpeg' %}" class="img-fluid" height="300" width="300">
       </div>
     </div>
   </section>
